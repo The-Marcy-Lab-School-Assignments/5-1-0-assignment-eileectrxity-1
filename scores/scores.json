@@ -7,13 +7,13 @@
     },
     "ShoppingCart Tests": {
       "ShTe1": 1,
-      "ShTe2": 0,
-      "ShTe3": 0,
-      "ShTe4": 0,
-      "ShTe5": 0,
-      "ShTe6": 0,
-      "ShTe7": 0,
-      "ShTe8": 0,
+      "ShTe2": 1,
+      "ShTe3": 1,
+      "ShTe4": 1,
+      "ShTe5": 1,
+      "ShTe6": 1,
+      "ShTe7": 1,
+      "ShTe8": 1,
       "ShTe9": 0,
       "ShTe10": 0,
       "ShTe11": 0,
@@ -56,7 +56,7 @@
   },
   "humanReadable": {
     "CartItem Tests": "3/3",
-    "finalTestScore": "FINAL SCORE: 4/15",
-    "ShoppingCart Tests": "1/12"
+    "finalTestScore": "FINAL SCORE: 11/15",
+    "ShoppingCart Tests": "8/12"
   }
 }
