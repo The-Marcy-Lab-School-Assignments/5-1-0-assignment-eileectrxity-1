@@ -2,11 +2,13 @@ import getId from "../utils/getId";
 import CartItem from "./CartItem";
 
 class ShoppingCart {
+  static #allCarts = []; //private static arr tied to the class to store all ShoppingCart instances
   #cartItems; //private instance variable to store CartItem objs specific to 'this' shopping cart instance
 
   constructor() {
     this.id = getId(); //assigning a unique ID to 'this' shopping cart instance using the getId() helper func; if we log the instance's property names, should only get 'id' as it's the only public property in the constructor func
     this.#cartItems = []; //initializing an empty arr to store all of 'this' instance's CartItem objs
+    ShoppingCart.#allCarts.push(this); //adding 'this' instance into the class's static arr of all shopping cart instances
   }
 
   createItem(name, price) {
@@ -29,6 +31,14 @@ class ShoppingCart {
 
   getTotal() {
     return this.#cartItems.reduce((total, item) => total + item.price, 0); //using reduce to iterate over arr of objs and sum up all the CartItems' price properties, returning the total sum 
+  }
+
+  static listAll() {
+    return [...ShoppingCart.#allCarts]; //returning a copy of the private static #allCarts arr
+  }
+
+  static findBy(cartID) {
+    return ShoppingCart.#allCarts.find((cart) => cart.id === cartID); //returning the ShoppingCart instance obj found in #allCarts arr with the matching ID- same functionality as { id }) => id === cartID
   }
 };
 

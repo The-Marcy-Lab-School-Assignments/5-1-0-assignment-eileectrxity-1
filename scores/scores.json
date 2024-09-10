@@ -14,10 +14,10 @@
       "ShTe6": 1,
       "ShTe7": 1,
       "ShTe8": 1,
-      "ShTe9": 0,
-      "ShTe10": 0,
-      "ShTe11": 0,
-      "ShTe12": 0
+      "ShTe9": 1,
+      "ShTe10": 1,
+      "ShTe11": 1,
+      "ShTe12": 1
     }
   },
   "idToTestNameHash": {
@@ -56,7 +56,7 @@
   },
   "humanReadable": {
     "CartItem Tests": "3/3",
-    "finalTestScore": "FINAL SCORE: 11/15",
-    "ShoppingCart Tests": "8/12"
+    "finalTestScore": "FINAL SCORE: 15/15",
+    "ShoppingCart Tests": "12/12"
   }
 }
