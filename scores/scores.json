@@ -2,8 +2,8 @@
   "testScores": {
     "CartItem Tests": {
       "CaTe1": 1,
-      "CaTe2": 0,
-      "CaTe3": 0
+      "CaTe2": 1,
+      "CaTe3": 1
     },
     "ShoppingCart Tests": {
       "ShTe1": 1,
@@ -55,8 +55,8 @@
     "vite-project/src/model/ShoppingCart.spec.js > ShoppingCart Tests > ShoppingCart.findBy returns the correct cart when given an id": "ShTe12"
   },
   "humanReadable": {
-    "CartItem Tests": "1/3",
-    "finalTestScore": "FINAL SCORE: 2/15",
+    "CartItem Tests": "3/3",
+    "finalTestScore": "FINAL SCORE: 4/15",
     "ShoppingCart Tests": "1/12"
   }
 }
